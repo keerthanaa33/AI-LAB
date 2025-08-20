@@ -1,0 +1,20 @@
+
+
+current_loc = input("Enter the current location of the vacuum (A or B): ")
+status_a = input("Enter the status of Room A (dirty/clean): ")
+status_b = input("Enter the status of Room B (dirty/clean): ")
+
+if status_a == "dirty":
+    print("Vacuum is in Room A")
+    print("Room A is dirty. Cleaning...")
+    status_a = "clean"
+    print("Room A is now clean.")
+
+if status_b == "dirty":
+    print("Moving to Room B")
+    print("Room B is dirty. Cleaning...")
+    status_b = "clean"
+    print("Room B is now clean.")
+
+if status_a == "clean" and status_b == "clean":
+    print("Both rooms are already clean.")
